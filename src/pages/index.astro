@@ -1,0 +1,83 @@
+---
+import Layout from '../layouts/Layout.astro';
+import AppWrapper from '../components/AppWrapper';
+---
+
+<Layout title="DevPortfolio - Desenvolvedor Full-Stack">
+	<AppWrapper client:load />
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  
+
+  <!-- Custom Styles -->
+  <style>
+    /* Additional custom styles */
+    .line-clamp-3 {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* Smooth scrolling for the entire page */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: linear-gradient(to bottom, #8b5cf6, #3b82f6);
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: linear-gradient(to bottom, #7c3aed, #2563eb);
+    }
+
+    /* Animation delays for staggered animations */
+    .animation-delay-100 { animation-delay: 100ms; }
+    .animation-delay-200 { animation-delay: 200ms; }
+    .animation-delay-300 { animation-delay: 300ms; }
+    .animation-delay-400 { animation-delay: 400ms; }
+    .animation-delay-500 { animation-delay: 500ms; }
+    .animation-delay-600 { animation-delay: 600ms; }
+    .animation-delay-700 { animation-delay: 700ms; }
+    .animation-delay-800 { animation-delay: 800ms; }
+
+    /* Reduced motion support */
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+    /* Focus styles for accessibility */
+    *:focus {
+      outline: 2px solid #8b5cf6;
+      outline-offset: 2px;
+    }
+
+    /* High contrast mode support */
+    @media (prefers-contrast: high) {
+      .bg-gradient-to-r {
+        background: #000 !important;
+        color: #fff !important;
+      }
+    }
+  </style>
+</Layout>
