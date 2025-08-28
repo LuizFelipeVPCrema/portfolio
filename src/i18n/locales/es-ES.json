@@ -1,0 +1,412 @@
+{
+  "common": {
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "close": "Cerrar",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "submit": "Enviar",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "all": "Todos",
+    "none": "Ninguno",
+    "view": "Ver",
+    "download": "Descargar",
+    "upload": "Subir"
+  },
+  "navigation": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "services": "Servicios",
+    "blog": "Blog",
+    "resume": "Currículum"
+  },
+  "header": {
+    "logo": "DevPortfolio",
+    "theme": {
+      "light": "Claro",
+      "dark": "Oscuro",
+      "system": "Sistema"
+    }
+  },
+  "hero": {
+    "greeting": "👋 Hola, soy un desarrollador full-stack",
+    "title": {
+      "part1": "Creando experiencias",
+      "part2": "digitales increíbles"
+    },
+    "subtitle": "Experto en desarrollo web moderno, creando aplicaciones de alto rendimiento y responsivas con las mejores tecnologías del mercado.",
+    "cta": {
+      "projects": "Ver Proyectos",
+      "contact": "Ponerse en Contacto"
+    },
+    "techStack": "Tecnologías que utilizo:"
+  },
+  "about": {
+    "title": "Acerca de",
+    "subtitle": "Conoce un poco más sobre mi trayectoria y experiencia",
+    "tabs": {
+      "about": "Acerca de",
+      "experience": "Experiencia",
+      "education": "Educación"
+    },
+    "mainTitle": "Acerca de <span class=\"bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent\">Mí</span>",
+    "description": "Desarrollador apasionado por crear soluciones innovadoras y experiencias digitales excepcionales",
+    "content": {
+      "about": {
+        "title": "Sobre Mí",
+        "subtitle": "Desarrollador Full-Stack con 5+ años de experiencia",
+        "description": "Soy un desarrollador apasionado por la tecnología y la innovación. Especializado en desarrollo web moderno, tengo experiencia creando aplicaciones escalables y performantes utilizando las mejores tecnologías del mercado.",
+        "description2": "Mi enfoque combina creatividad técnica con foco en experiencia del usuario, siempre buscando entregar soluciones que no solo funcionen, sino que también encanten.",
+                  "highlights": [
+            "Desarrollo de aplicaciones web modernas",
+            "Arquitectura de sistemas escalables",
+            "Optimización de rendimiento y UX",
+            "Trabajo en equipo y liderazgo técnico"
+          ],
+          "stats": {
+            "projects": {
+              "number": "50+",
+              "label": "Proyectos Completados"
+            },
+            "experience": {
+              "number": "5+",
+              "label": "Años de Experiencia"
+            }
+          }
+      },
+      "experience": {
+        "title": "Experiencia Profesional",
+        "items": [
+          {
+            "title": "Desarrollador Full-Stack Senior",
+            "company": "TechCorp",
+            "period": "2022 - Presente",
+            "description": "Liderazgo técnico en proyectos de gran escala, arquitectura de sistemas y mentoría de desarrolladores junior."
+          },
+          {
+            "title": "Desarrollador Frontend",
+            "company": "WebSolutions",
+            "period": "2020 - 2022",
+            "description": "Desarrollo de interfaces modernas y responsivas, optimización de rendimiento e implementación de mejores prácticas."
+          },
+          {
+            "title": "Desarrollador Junior",
+            "company": "StartupXYZ",
+            "period": "2019 - 2020",
+            "description": "Primera experiencia profesional, aprendizaje de tecnologías modernas y desarrollo de funcionalidades."
+          }
+        ]
+      },
+      "education": {
+        "title": "Formación Académica",
+        "items": [
+          {
+            "title": "Licenciatura en Ciencias de la Computación",
+            "institution": "Universidad Federal",
+            "period": "2015 - 2019",
+            "description": "Formación sólida en fundamentos de la computación, algoritmos y estructuras de datos."
+          },
+          {
+            "title": "Certificación AWS Developer",
+            "institution": "Amazon Web Services",
+            "period": "2021",
+            "description": "Certificación oficial en desarrollo de aplicaciones en la nube AWS."
+          }
+        ]
+      }
+    }
+  },
+  "skills": {
+    "title": "Mis Habilidades",
+    "subtitle": "Tecnologías y herramientas que utilizo para crear soluciones modernas y eficientes",
+    "categories": {
+      "all": "Todas",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Herramientas"
+    },
+    "skillsList": {
+      "frontend": [
+        { "name": "JavaScript", "icon": "fab fa-js-square", "color": "bg-yellow-400" },
+        { "name": "HTML5", "icon": "fab fa-html5", "color": "bg-orange-500" },
+        { "name": "CSS", "icon": "fab fa-css3-alt", "color": "bg-blue-500" },
+        { "name": "TypeScript", "icon": "fab fa-js-square", "color": "bg-blue-600" },
+        { "name": "React", "icon": "fab fa-react", "color": "bg-blue-500" },
+        { "name": "NextJs", "icon": "fab fa-react", "color": "bg-black" },
+        { "name": "Vue", "icon": "fab fa-vuejs", "color": "bg-green-500" },
+        { "name": "Angular", "icon": "fab fa-angular", "color": "bg-red-500" },
+        { "name": "Astro", "icon": "fas fa-rocket", "color": "bg-purple-600" },
+        { "name": "Tailwind", "icon": "fas fa-palette", "color": "bg-cyan-500" },
+        { "name": "Bootstrap", "icon": "fab fa-bootstrap", "color": "bg-purple-500" },
+        { "name": "StyledComponent", "icon": "fas fa-paint-brush", "color": "bg-pink-500" }
+      ],
+      "backend": [
+        { "name": "NodeJS", "icon": "fab fa-node-js", "color": "bg-green-500" },
+        { "name": "Python", "icon": "fab fa-python", "color": "bg-blue-600" },
+        { "name": "Flask", "icon": "fab fa-python", "color": "bg-gray-600" },
+        { "name": "Java",  "icon": "fab fa-java", "color": "bg-red-600" },
+        { "name": "Django", "icon": "fab fa-python", "color": "bg-green-600" },
+        { "name": "Golang", "icon": "fas fa-code", "color": "bg-blue-500" },
+        { "name": "MySQL", "icon": "fas fa-database", "color": "bg-blue-700" },
+        { "name": "PostgreSQL", "icon": "fas fa-database", "color": "bg-blue-700" }
+      ],
+      "tools": [
+        { "name": "Git", "icon": "fab fa-git-alt", "color": "bg-orange-600" },
+        { "name": "Postman", "icon": "fas fa-paper-plane", "color": "bg-orange-500" },
+        { "name": "NPM", "icon": "fab fa-npm", "color": "bg-red-500" },
+        { "name": "Docker", "icon": "fab fa-docker", "color": "bg-blue-500" },
+        { "name": "Cypress", "icon": "fas fa-bug", "color": "bg-green-600" },
+        { "name": "Prism", "icon": "fas fa-code", "color": "bg-gray-700" },
+        { "name": "SKLearn", "icon": "fas fa-brain", "color": "bg-orange-600" }
+      ]
+    },
+    "infoCards": {
+      "cleanCode": {
+        "title": "Código Limpio",
+        "description": "Escribo código limpio, bien documentado y siguiendo las mejores prácticas de la industria."
+      },
+      "responsive": {
+        "title": "Responsivo",
+        "description": "Desarrollo aplicaciones que funcionan perfectamente en todos los dispositivos y tamaños de pantalla."
+      },
+      "performance": {
+        "title": "Rendimiento",
+        "description": "Optimizo aplicaciones para máximo rendimiento, velocidad y experiencia del usuario."
+      }
+    }
+  },
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "Algunos de los proyectos que he desarrollado y de los que me enorgullezco",
+    "filters": {
+      "all": "Todos",
+      "web": "Web",
+      "mobile": "Móvil",
+      "fullstack": "Full-Stack",
+      "design": "Diseño"
+    },
+    "projectsList": [
+      {
+        "id": 1,
+        "title": "E-commerce Platform",
+        "description": "Plataforma completa de e-commerce con carrito de compras, pagos y panel administrativo. Desarrollada con React, Node.js y PostgreSQL.",
+        "image": "/api/placeholder/600/400",
+        "technologies": ["React", "Node.js", "PostgreSQL", "Stripe", "Redux"],
+        "category": "fullstack",
+        "liveUrl": "https://ecommerce-demo.com",
+        "githubUrl": "https://github.com/user/ecommerce",
+        "featured": true
+      },
+      {
+        "id": 2,
+        "title": "Task Management App",
+        "description": "Aplicación de gestión de tareas con drag & drop, notificaciones y colaboración en tiempo real.",
+        "image": "/api/placeholder/600/400",
+        "technologies": ["Angular", "Firebase", "TypeScript", "Angular Material"],
+        "category": "web",
+        "liveUrl": "https://task-app-demo.com",
+        "githubUrl": "https://github.com/user/task-app",
+        "featured": true
+      },
+      {
+        "id": 3,
+        "title": "Fitness Tracking Mobile App",
+        "description": "Aplicación móvil para seguimiento de ejercicios y nutrición con gráficos y metas personalizadas.",
+        "image": "/api/placeholder/600/400",
+        "technologies": ["React Native", "Expo", "GraphQL", "MongoDB"],
+        "category": "mobile",
+        "liveUrl": "https://fitness-app.com",
+        "githubUrl": "https://github.com/user/fitness-app",
+        "featured": true
+      },
+      {
+        "id": 4,
+        "title": "Portfolio Website",
+        "description": "Sitio web de portafolio moderno y responsivo con animaciones suaves y diseño minimalista.",
+        "image": "/api/placeholder/600/400",
+        "technologies": ["Astro", "React", "Angular", "Tailwind CSS"],
+        "category": "web",
+        "liveUrl": "https://portfolio-demo.com",
+        "githubUrl": "https://github.com/user/portfolio",
+        "featured": false
+      },
+      {
+        "id": 5,
+        "title": "Weather Dashboard",
+        "description": "Dashboard meteorológico con pronósticos en tiempo real, mapas interactivos y alertas personalizadas.",
+        "image": "/api/placeholder/600/400",
+        "technologies": ["Vue.js", "D3.js", "OpenWeather API", "PWA"],
+        "category": "web",
+        "liveUrl": "https://weather-dashboard.com",
+        "githubUrl": "https://github.com/user/weather-app",
+        "featured": false
+      },
+      {
+        "id": 6,
+        "title": "Design System",
+        "description": "Sistema de diseño completo con componentes reutilizables, documentación y guías de estilo.",
+        "image": "/api/placeholder/600/400",
+        "technologies": ["Storybook", "Figma", "React", "Styled Components"],
+        "category": "design",
+        "liveUrl": "https://design-system.com",
+        "githubUrl": "https://github.com/user/design-system",
+        "featured": false
+      }
+    ],
+    "modal": {
+      "close": "Cerrar",
+      "visit": "Visitar Proyecto",
+      "source": "Ver Código",
+      "technologies": "Tecnologías utilizadas:",
+      "description": "Descripción",
+      "features": "Funcionalidades",
+      "challenges": "Desafíos",
+      "solutions": "Soluciones"
+    },
+    "buttons": {
+      "viewDetails": "Ver Detalles",
+      "demo": "Demo",
+      "code": "Código",
+      "viewDemo": "Ver Demo",
+      "viewCode": "Ver Código",
+      "letsTalk": "Hablemos"
+    },
+    "labels": {
+      "featured": "Destacado",
+      "technologiesUsed": "Tecnologías Utilizadas:",
+      "interestedInWorking": "¿Interesado en trabajar juntos? ¡Vamos a crear algo increíble!"
+    }
+  },
+  "contact": {
+    "title": "Vamos a Conversar",
+    "subtitle": "¿Interesado en trabajar juntos? Ponte en contacto y vamos a crear algo increíble!",
+    "form": {
+      "title": "Envía un mensaje",
+      "name": {
+        "label": "Nombre Completo *",
+        "placeholder": "Tu nombre completo"
+      },
+      "email": {
+        "label": "Email *",
+        "placeholder": "tu@email.com"
+      },
+      "subject": {
+        "label": "Asunto *",
+        "placeholder": "Selecciona un asunto",
+        "options": {
+          "project": "Proyecto Web",
+          "consulting": "Consultoría",
+          "freelance": "Freelance",
+          "other": "Otro"
+        }
+      },
+      "message": {
+        "label": "Mensaje *",
+        "placeholder": "Cuéntame sobre tu proyecto..."
+      },
+      "submit": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "success": "¡Mensaje enviado con éxito! Te responderé pronto.",
+      "error": "Error al enviar mensaje. Inténtalo de nuevo o contáctame directamente."
+    },
+    "info": {
+      "title": "Información de Contacto",
+      "description": "Siempre estoy abierto a nuevas oportunidades y proyectos interesantes. Si tienes una idea o proyecto en mente, ¡no dudes en ponerte en contacto!",
+      "methods": [
+        {
+          "icon": "fas fa-envelope",
+          "title": "Email",
+          "value": "contacto@devportfolio.com",
+          "link": "mailto:contacto@devportfolio.com"
+        },
+        {
+          "icon": "fas fa-phone",
+          "title": "Teléfono",
+          "value": "+34 600 000 000",
+          "link": "tel:+34600000000"
+        },
+        {
+          "icon": "fas fa-map-marker-alt",
+          "title": "Ubicación",
+          "value": "Madrid, España"
+        },
+        {
+          "icon": "fas fa-clock",
+          "title": "Horario de Trabajo",
+          "value": "Lunes - Viernes, 9h - 18h"
+        }
+      ]
+    },
+    "social": {
+      "title": "Redes Sociales",
+      "links": [
+        {
+          "name": "GitHub",
+          "icon": "fab fa-github",
+          "url": "https://github.com/username"
+        },
+        {
+          "name": "LinkedIn",
+          "icon": "fab fa-linkedin",
+          "url": "https://linkedin.com/in/username"
+        },
+        {
+          "name": "Twitter",
+          "icon": "fab fa-twitter",
+          "url": "https://twitter.com/username"
+        },
+        {
+          "name": "Instagram",
+          "icon": "fab fa-instagram",
+          "url": "https://instagram.com/username"
+        }
+      ]
+    },
+    "availability": {
+      "title": "Disponible para proyectos",
+      "description": "Actualmente aceptando nuevos proyectos y oportunidades de colaboración."
+    }
+  },
+  "footer": {
+    "description": "Desarrollador full-stack apasionado por crear experiencias digitales excepcionales. Especializado en tecnologías modernas y soluciones innovadoras.",
+    "sections": {
+      "navigation": "Navegación",
+      "services": "Servicios",
+      "technologies": "Tecnologías"
+    },
+    "services": {
+      "webDevelopment": "Desarrollo Web",
+      "mobileApps": "Aplicaciones Móviles",
+      "consulting": "Consultoría",
+      "uiuxDesign": "Diseño UI/UX"
+    },
+    "newsletter": {
+      "title": "Mantente actualizado",
+      "description": "Recibe actualizaciones sobre nuevos proyectos y tecnologías",
+      "placeholder": "Tu email",
+      "button": "Suscribirse"
+    },
+    "legal": {
+      "privacy": "Privacidad",
+      "terms": "Términos de Uso",
+      "copyright": "© {year} DevPortfolio. Todos los derechos reservados.",
+      "developedWith": "Desarrollado con"
+    },
+    "backToTop": "Volver arriba"
+  },
+  "languages": {
+    "pt-BR": "Português",
+    "en-US": "English",
+    "es-ES": "Español"
+  }
+}

@@ -1,0 +1,123 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Portfólio moderno desenvolvido com Astro, React e Angular" } = Astro.props;
+
+import '../styles/global.css';
+---
+
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    
+    <!-- Preload critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+                                         <!-- Theme script for SSR -->
+                                   <script is:inline>
+                    const theme = (() => {
+                      if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+                        const savedTheme = localStorage.getItem('theme');
+                        if (savedTheme === 'light' || savedTheme === 'dark' || savedTheme === 'system') {
+                          return savedTheme;
+                        }
+                      }
+                      return 'system';
+                    })();
+                    
+                    // Apply theme immediately
+                    const element = document.documentElement;
+                    element.classList.remove('dark'); // Reset first
+                    
+                    if (theme === 'system') {
+                      // Para sistema, verificar a preferência do sistema
+                      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                        element.classList.add('dark');
+                      }
+                    } else if (theme === 'dark') {
+                      // Para dark, adicionar a classe
+                      element.classList.add('dark');
+                    }
+                    // Para light, não fazer nada (classe já foi removida)
+                    
+                    window.localStorage.setItem('theme', theme);
+                  </script>
+  </head>
+  <body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+    <slot />
+    
+    <!-- Theme system script -->
+    <script>
+      // Listen for system theme changes when theme is set to 'system'
+      const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+      mediaQuery.addEventListener('change', (e) => {
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme === 'system') {
+          if (e.matches) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    --accent: 136, 58, 234;
+    --accent-light: 224, 204, 250;
+    --accent-dark: 49, 10, 101;
+    --accent-gradient: linear-gradient(45deg, rgb(var(--accent)), rgb(var(--accent-light)) 30%, white 60%);
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(var(--accent));
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(var(--accent-dark));
+  }
+  
+  /* Smooth transitions */
+  * {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+</style>
